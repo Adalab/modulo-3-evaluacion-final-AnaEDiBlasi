@@ -91,7 +91,12 @@ const characterDetails = characters.find(character => character.id === character
         </>
       }/>
 
-      <Route path='/character/:idCharacter' element={<CharacterDetail  characterDetails={characterDetails} />}/>
+      <Route path='/character/:idCharacter' element={
+        <>
+        <Header/>
+        <CharacterDetail  characterDetails={characterDetails} />
+        </>
+        }/>
 
       <Route path='*' element={<NotFound/>}/>
 
