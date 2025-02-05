@@ -6,7 +6,7 @@ function NotFound() {
     <div className="not-found">
       <h1>Lo sentimos, pero esta página no se ha encontrado.</h1>
       <p>Verifica la URL o regresa a la página principal.</p>
-      <Link to="/" className="not-found-link">Volver a inicio</Link>
+      <Link to="/" className="btn-link">Volver a inicio</Link>
     </div>
   )
 }

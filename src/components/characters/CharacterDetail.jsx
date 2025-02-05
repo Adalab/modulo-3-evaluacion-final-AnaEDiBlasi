@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function CharacterDetail({characterDetails}) {
@@ -16,6 +17,8 @@ function CharacterDetail({characterDetails}) {
 
   return (
 
+    <>
+
     <article className="card-detail">
         <img src={image} alt="" />
         <h2>{name}</h2>
@@ -23,18 +26,11 @@ function CharacterDetail({characterDetails}) {
         <p>Genero: {gender}</p>
         <p>Especie: {specie}</p>
         <p>Vivo: {isAlive}</p>
-         {/* si hay nombres alternativos, se muestran
-          
-        <ul>
-           {alternateNames.map((name, index)=>{
-              <li key={index}>{name}</li>
-            })}
-        </ul>    
-        
-        */}
-        
         
     </article>
+
+    <Link to="/" className="btn-link">Volver a inicio</Link>
+  </>
   )
 }
 

@@ -46,6 +46,9 @@ body {
   color: $text-color;
   text-decoration: none;
   border: 2px solid $border-color; // Borde granate
+  height: 200px; 
+  
+
 
   &:hover {
     transform: scale(1.05);
@@ -145,7 +148,7 @@ body {
   margin-bottom: 20px;
 }
 
-.not-found-link {
+.btn-link {
   display: inline-block;
   padding: 10px 20px;
   background-color: #740001;
@@ -160,7 +163,32 @@ body {
 }
 
 
+// Estilos responsives
+@media (max-width: 768px) {
+  .character-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 
+  .filters-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-list {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .character-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .header img {
+    width: 200px;
+  }
+}
 
 
 

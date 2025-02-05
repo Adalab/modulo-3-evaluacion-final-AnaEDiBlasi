@@ -7,6 +7,7 @@ import Filters from './filters/Filters';
 import CharacterDetail from './characters/CharacterDetail';
 import NotFound from './NotFound';
 import Header from './Header';
+import BtnReset from './BtnReset';
 
 function App() {
 
@@ -22,6 +23,14 @@ function App() {
   useEffect(()=>{
     api().then((data)=> {setCharacters(data)})
   }, []);
+
+
+  //boton de reset
+  const btnResetFilters = () =>{
+    setFilterName(""),
+    setFilterHouse("Gryffindor"),
+    setFilterGender("")
+  }
 
 
 //FILTROS
@@ -86,6 +95,8 @@ function App() {
 
           <br />
           <br />
+
+          <BtnReset btnResetFilters={btnResetFilters}/>
           
           
           <CharacterList  
