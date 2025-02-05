@@ -1,8 +1,9 @@
 import FilterByName from "./FilterByName"
 import FilterByHouse from "./FilterByHouse"
+import FilterByGender from "./FilterByGender"
 
 
-function Filters({setFilterName, setFilterHouse, filterName}) {
+function Filters({setFilterName, setFilterHouse, filterName, setFilterGender, filterGender, filterHouse}) {
 
   const handleForm = (ev) =>{
 
@@ -21,7 +22,9 @@ function Filters({setFilterName, setFilterHouse, filterName}) {
         <br />
         <br />
 
-        <FilterByHouse setFilterHouse={setFilterHouse}/>
+        <FilterByHouse setFilterHouse={setFilterHouse} filterHouse={filterHouse}/>
+
+        <FilterByGender setFilterGender={setFilterGender} filterGender={filterGender}/>
 
 
     </form>

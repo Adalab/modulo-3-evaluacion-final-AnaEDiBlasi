@@ -18,7 +18,7 @@ function FilterByName({setFilterName, filterName}) {
 
 
     <div className="filter-name">
-      <label className="filter-name-label" htmlFor="">Busca por personaje:</label>
+      <label className="filter-name-label" htmlFor="">Buscar por personaje</label>
       <input 
       className="filter-name-input"
       type="text" 

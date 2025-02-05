@@ -15,6 +15,8 @@ function App() {
   const [filterName, setFilterName] = useState("")
   //filtro byhouse
   const [filterHouse, setFilterHouse] = useState ("Gryffindor")
+  //filtro byGender
+  const [filterGender, setFilterGender] = useState("")
 
 //traemos la info de la API a App
   useEffect(()=>{
@@ -26,7 +28,8 @@ function App() {
   //filtro para buscar por personaje, añadiremos todos los filtro que useremos en una variable y es la que usaremos para llamarla cuando cargue la pagina. 
   const filtersCharacters = characters
   .filter((character)=> character.name.toLowerCase().includes(filterName))
-  .filter((character)=> filterHouse ? character.house === filterHouse : true)//ojo, cambiar para que empiece por griffindor
+  .filter((character)=> filterHouse ? character.house === filterHouse : true)
+  .filter((character)=> filterGender ? character.gender === filterGender : true)
 
 
 
@@ -51,7 +54,7 @@ function App() {
   const characterIdrUrl = characterRoute ? characterRoute.params.idCharacter : null;
 
   //3.buscar el personaje con find
-const characterDetails = characters.find(character => character.id === characterIdrUrl) || null;
+  const characterDetails = characters.find(character => character.id === characterIdrUrl) || null;
 
 
 
@@ -76,6 +79,9 @@ const characterDetails = characters.find(character => character.id === character
           setFilterName={setFilterName}
           filterName={filterName}
           setFilterHouse={setFilterHouse}
+          filterHouse={filterHouse}
+          setFilterGender={setFilterGender}
+          filterGender={filterGender}
           />
 
           <br />
