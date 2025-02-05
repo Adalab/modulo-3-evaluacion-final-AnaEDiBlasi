@@ -1,6 +1,7 @@
 import FilterByName from "./FilterByName"
 import FilterByHouse from "./FilterByHouse"
 import FilterByGender from "./FilterByGender"
+import PropTypes from "prop-types"
 
 
 
@@ -31,5 +32,20 @@ function Filters({setFilterName, setFilterHouse, filterName, setFilterGender, fi
     </form>
   )
 }
+
+Filters.propTypes ={
+  setFilterName: PropTypes.func.isRequired,
+  setFilterHouse: PropTypes.func.isRequired,
+  setFilterGender: PropTypes.func.isRequired,
+
+  filterName: PropTypes.string.isRequired,
+  filterGender: PropTypes.string.isRequired,
+  filterHouse: PropTypes.string.isRequired,
+
+
+};
+
+
+
 
 export default Filters

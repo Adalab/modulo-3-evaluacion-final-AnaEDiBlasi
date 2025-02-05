@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types"
 
 
 
@@ -20,6 +20,12 @@ function FilterByGender({setFilterGender, filterGender}) {
 
     </div>
   )
+}
+
+FilterByGender.propTypes = {
+  setFilterGender: PropTypes.func.isRequired,
+  filterGender: PropTypes.string.isRequired
+
 }
 
 export default FilterByGender

@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types"
 
 function FilterByName({setFilterName, filterName}) {
 
@@ -7,9 +7,6 @@ function FilterByName({setFilterName, filterName}) {
     setFilterName(ev.target.value.toLowerCase())
 
   }
-
-
-
 
 
 
@@ -26,6 +23,11 @@ function FilterByName({setFilterName, filterName}) {
       onChange={handleInput}/>
     </div>
   )
+}
+
+FilterByName.propTypes ={
+  setFilterName: PropTypes.func.isRequired,
+  filterName: PropTypes.string.isRequired,
 }
 
 export default FilterByName

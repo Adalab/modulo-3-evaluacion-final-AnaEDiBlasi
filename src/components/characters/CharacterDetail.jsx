@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from "prop-types";
 
 
 function CharacterDetail({characterDetails}) {
@@ -34,5 +34,18 @@ function CharacterDetail({characterDetails}) {
   </>
   )
 }
+
+CharacterDetail.propTypes ={
+  characterDetails: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    house: PropTypes.string.isRequired,
+    gender: PropTypes.string.isRequired,
+    species: PropTypes.string.isRequired,
+    alive: PropTypes.bool.isRequired,
+  }).isRequired,
+
+}
+
 
 export default CharacterDetail

@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types"
 
 function BtnReset({btnResetFilters}) {
   return (
@@ -8,7 +8,9 @@ function BtnReset({btnResetFilters}) {
 }
 
 
-
+BtnReset.propTypes ={
+  btnResetFilters: PropTypes.func.isRequired,
+}
 
 
 export default BtnReset

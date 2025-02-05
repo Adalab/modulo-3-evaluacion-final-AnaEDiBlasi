@@ -1,5 +1,5 @@
 import CharacterCard from "./CharacterCard"
-
+import PropTypes from "prop-types"
 
 
 function CharacterList({characters}) {
@@ -13,6 +13,17 @@ function CharacterList({characters}) {
       {charactersHtml}
     </div>
   )
+}
+
+CharacterList.propTypes ={
+  characters: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      species: PropTypes.string.isRequired,
+    })
+  ).isRequired
 }
 
 export default CharacterList
