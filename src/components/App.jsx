@@ -6,6 +6,7 @@ import CharacterList from './characters/CharacterList'
 import Filters from './filters/Filters';
 import CharacterDetail from './characters/CharacterDetail';
 import NotFound from './NotFound';
+import Header from './Header';
 
 function App() {
 
@@ -68,6 +69,8 @@ const characterDetails = characters.find(character => character.id === character
 
       <Route path='/' element={
         <>
+
+          <Header/>
 
           <Filters 
           setFilterName={setFilterName}
