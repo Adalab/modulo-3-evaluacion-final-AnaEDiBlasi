@@ -2,7 +2,7 @@ import FilterByName from "./FilterByName"
 import FilterByHouse from "./FilterByHouse"
 
 
-function Filters({setFilterName, setFilterHouse}) {
+function Filters({setFilterName, setFilterHouse, filterName}) {
 
   const handleForm = (ev) =>{
 
@@ -16,7 +16,10 @@ function Filters({setFilterName, setFilterHouse}) {
   return (
     <form onSubmit={handleForm}>
 
-        <FilterByName setFilterName={setFilterName}/>
+        <FilterByName setFilterName={setFilterName} filterName={filterName}/>
+
+        <br />
+        <br />
 
         <FilterByHouse setFilterHouse={setFilterHouse}/>
 

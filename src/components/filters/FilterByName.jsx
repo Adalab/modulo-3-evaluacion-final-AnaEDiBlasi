@@ -1,6 +1,6 @@
 
 
-function FilterByName({setFilterName}) {
+function FilterByName({setFilterName, filterName}) {
 
 
   const handleInput =(ev) =>{
@@ -19,7 +19,10 @@ function FilterByName({setFilterName}) {
 
     <div>
       <label htmlFor="">Busca por personaje:</label>
-      <input type="text" onChange={handleInput}/>
+      <input 
+      type="text" 
+      value={filterName}//esto hace que al volver atras el input mantega el nombre que escribio la usuario anteriormente
+      onChange={handleInput}/>
     </div>
   )
 }

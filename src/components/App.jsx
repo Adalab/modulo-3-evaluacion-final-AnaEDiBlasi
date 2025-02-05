@@ -5,6 +5,7 @@ import { matchPath, Route, Routes, useLocation } from 'react-router-dom';
 import CharacterList from './characters/CharacterList'
 import Filters from './filters/Filters';
 import CharacterDetail from './characters/CharacterDetail';
+import NotFound from './NotFound';
 
 function App() {
 
@@ -70,8 +71,12 @@ const characterDetails = characters.find(character => character.id === character
 
           <Filters 
           setFilterName={setFilterName}
+          filterName={filterName}
           setFilterHouse={setFilterHouse}
           />
+
+          <br />
+          <br />
           
           
           <CharacterList  
@@ -84,6 +89,8 @@ const characterDetails = characters.find(character => character.id === character
       }/>
 
       <Route path='/character/:idCharacter' element={<CharacterDetail  characterDetails={characterDetails} />}/>
+
+      <Route path='*' element={<NotFound/>}/>
 
 
     </Routes>
