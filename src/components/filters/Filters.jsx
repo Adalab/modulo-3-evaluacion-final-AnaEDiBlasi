@@ -14,7 +14,7 @@ function Filters({setFilterName, setFilterHouse, filterName}) {
 
     
   return (
-    <form onSubmit={handleForm}>
+    <form  className="filters-container"onSubmit={handleForm}>
 
         <FilterByName setFilterName={setFilterName} filterName={filterName}/>
 

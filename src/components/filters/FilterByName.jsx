@@ -17,9 +17,10 @@ function FilterByName({setFilterName, filterName}) {
 
 
 
-    <div>
-      <label htmlFor="">Busca por personaje:</label>
+    <div className="filter-name">
+      <label className="filter-name-label" htmlFor="">Busca por personaje:</label>
       <input 
+      className="filter-name-input"
       type="text" 
       value={filterName}//esto hace que al volver atras el input mantega el nombre que escribio la usuario anteriormente
       onChange={handleInput}/>

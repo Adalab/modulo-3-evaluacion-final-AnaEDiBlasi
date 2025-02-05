@@ -16,7 +16,7 @@ function CharacterDetail({characterDetails}) {
 
   return (
 
-    <article>
+    <article className="card-detail">
         <img src={image} alt="" />
         <h2>{name}</h2>
         <h2>{house}</h2>

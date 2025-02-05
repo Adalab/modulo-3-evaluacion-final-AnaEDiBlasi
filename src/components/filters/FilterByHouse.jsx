@@ -10,8 +10,8 @@ function FilterByHouse({setFilterHouse}) {
 
 
   return (
-    <div>
-      <label htmlFor="">Selecciona la casa: </label>
+    <div className="filter-house">
+      <label className="filter-house-label"  htmlFor="">Selecciona la casa: </label>
       <select name="" id="" onChange={handleSelect}>
         <option value="Gryffindor">Gryffindor</option>
         <option value="Slytherin">Slytherin</option>

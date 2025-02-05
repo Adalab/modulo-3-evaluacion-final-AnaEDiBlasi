@@ -8,7 +8,7 @@ function CharacterList({characters}) {
 
   
   return (
-    <div>
+    <div className="character-list">
       {charactersHtml}
     </div>
   )
