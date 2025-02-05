@@ -1,15 +1,13 @@
 
 
+
+
 function FilterByGender({setFilterGender, filterGender}) {
 
     const handleSelectGender = (ev) =>{
         setFilterGender(ev.target.value)
     }
     
-
-
-
-
   return (
     <div>
         <label className="filter-house" htmlFor="">Buscar por género</label>

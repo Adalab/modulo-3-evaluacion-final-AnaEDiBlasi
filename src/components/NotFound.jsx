@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 
+
 function NotFound() {
   return (
     <div className="not-found">
@@ -10,5 +11,11 @@ function NotFound() {
     </div>
   )
 }
+
+
+
+
+
+
 
 export default NotFound

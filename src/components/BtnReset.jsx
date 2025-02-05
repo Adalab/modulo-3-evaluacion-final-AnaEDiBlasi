@@ -7,4 +7,8 @@ function BtnReset({btnResetFilters}) {
   )
 }
 
+
+
+
+
 export default BtnReset

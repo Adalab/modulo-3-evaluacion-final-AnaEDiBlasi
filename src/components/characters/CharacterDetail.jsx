@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 
+
 function CharacterDetail({characterDetails}) {
 
   // Variables con nombres fáciles de entender

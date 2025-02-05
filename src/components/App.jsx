@@ -9,6 +9,7 @@ import NotFound from './NotFound';
 import Header from './Header';
 import BtnReset from './BtnReset';
 
+
 function App() {
 
   const [characters, setCharacters] = useState([]);
