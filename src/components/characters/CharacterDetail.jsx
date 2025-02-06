@@ -21,7 +21,7 @@ function CharacterDetail({characterDetails}) {
     <>
 
     <article className="card-detail">
-        <img src={image} alt="" />
+        <img src={image} alt="character Photo" />
         <h2>{name}</h2>
         <h2>{house}</h2>
         <p>Genero: {gender}</p>
@@ -37,13 +37,13 @@ function CharacterDetail({characterDetails}) {
 
 CharacterDetail.propTypes ={
   characterDetails: PropTypes.shape({
-    image: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    house: PropTypes.string.isRequired,
-    gender: PropTypes.string.isRequired,
-    species: PropTypes.string.isRequired,
-    alive: PropTypes.bool.isRequired,
-  }).isRequired,
+    image: PropTypes.string,
+    name: PropTypes.string,
+    house: PropTypes.string,
+    gender: PropTypes.string,
+    species: PropTypes.string,
+    alive: PropTypes.string,
+  }),
 
 }
 
