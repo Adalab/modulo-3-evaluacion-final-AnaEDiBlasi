@@ -46,7 +46,7 @@ body {
   color: $text-color;
   text-decoration: none;
   border: 2px solid $border-color; // Borde granate
-  height: 200px; 
+  height: 220px; 
   
 
 
@@ -164,31 +164,31 @@ body {
 
 
 // Estilos responsives
-@media (max-width: 768px) {
-  .character-list {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
+// @media (max-width: 768px) {
+//   .character-list {
+//     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+//   }
 
-  .filters-container {
-    flex-direction: column;
-    align-items: center;
-  }
+//   .filters-container {
+//     flex-direction: column;
+//     align-items: center;
+//   }
 
-  .card-list {
-    height: auto;
-    padding: 10px;
-  }
-}
+//   .card-list {
+//     height: auto;
+//     padding: 10px;
+//   }
+// }
 
-@media (max-width: 480px) {
-  .character-list {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
+// @media (max-width: 480px) {
+//   .character-list {
+//     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+//   }
 
-  .header img {
-    width: 200px;
-  }
-}
+//   .header img {
+//     width: 200px;
+//   }
+// }
 
 
 

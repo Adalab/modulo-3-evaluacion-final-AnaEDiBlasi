@@ -4,7 +4,12 @@ import PropTypes from "prop-types"
 
 function CharacterList({characters}) {
 
-  const charactersHtml = characters.map(character => <CharacterCard key ={character.id} character={character}/> )
+  if(characters.length === 0){
+    return <p> No hay resultados</p>
+  }
+
+  const charactersHtml = characters.map(character =>
+     <CharacterCard key ={character.id} character={character}/> )
 
 
   

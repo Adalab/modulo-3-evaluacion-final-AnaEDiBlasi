@@ -13,9 +13,10 @@ function FilterByGender({setFilterGender, filterGender}) {
         <label className="filter-house" htmlFor="">Buscar por género</label>
         <br />
         <select value={filterGender} onChange={handleSelectGender}  className="filter-house-label" >
-            <option value="">Selecciona</option>
-            <option value="female">Mujer</option>
-            <option value="male">Hombre</option>
+            <option value=""> Selecciona </option>
+            <option value="Mujer"> Mujer </option>
+            <option value="Hombre"> Hombre </option>
+            
         </select>
 
     </div>
