@@ -99,22 +99,23 @@ function App() {
 
           <BtnReset btnResetFilters={btnResetFilters}/>
           
-          
           <CharacterList  
-          characters={filtersCharacters}
-         
-          />
+          characters={filtersCharacters}/>
 
         
         </>
       }/>
 
       <Route path='/character/:idCharacter' element={
-        <>
-        <Header/>
-        <CharacterDetail  characterDetails={characterDetails} />
-        </>
-        }/>
+           characterDetails ? (
+            <>
+              <Header />
+              <CharacterDetail characterDetails={characterDetails} />
+              </>
+            ) : (
+              <NotFound />
+             )
+           }/>
 
       <Route path='*' element={<NotFound/>}/>
 
